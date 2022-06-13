@@ -1,0 +1,89 @@
+.section2 {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    .container {
+        max-width: 1170px;
+        margin: 0 auto;
+
+        .section2__header {
+            display: flex;
+            align-items: center;
+            text-align: center;
+            flex-direction: column;
+            .awesome {
+                padding: 54px 0px;
+                font-family: 'Raleway';
+                font-size: 36px;
+                line-height: 42px;
+            }
+
+            .border {
+                width: 170px;
+                border-bottom: 1px solid #EC7979;
+            }
+            .border {
+                width: 170px;
+                border-bottom: 1px solid #EC7979;
+            }
+            .header__text {
+                padding: 40px 0;
+                font-family: 'Raleway';
+                font-size: 18px;
+                line-height: 21px;
+            }
+        }
+        
+        .section2__main {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            .title__wraper {
+                min-width: 288px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                flex: 1 1 33%;
+                padding: 39px 0px;
+            
+                .img__wrapper {
+                    border: 1px solid #EC7979;
+                    border-radius: 50%;
+                    width: 92px;
+                    height: 92px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                
+                    img{
+                        width: 60px;
+                        height: 60px;
+                    }
+                }
+        
+                h4 {
+                    padding: 33.5px 0px;
+                    font-family: 'Open Sans';
+                    font-weight: 700;
+                    font-size: 24px;
+                    line-height: 33px;
+                    text-align: center;
+                }
+        
+                p {
+                    padding: 18px 20px 0px 20px;
+                    font-family: 'Raleway';
+                    font-size: 18px;
+                    line-height: 21px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+
+
+

@@ -1,0 +1,159 @@
+.main {
+    background: url(../../img/main/image.png) 0 0/100% 100% no-repeat;
+    
+
+    @media (width: 600px) {
+        .main {
+            background: url(../../img/main/image.png) 0 0/100% auto no-repeat;
+        }
+    }
+        
+    
+    .container {                
+        max-width: 1170px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        align-self: center;
+        flex: 1 1 300px;
+        align-items: center;
+
+        .main__body{
+            
+            display: flex;
+            flex-direction: column;
+            flex: 1 1 300px;
+            margin: 200px 0 0 0;
+
+            .body__logo {
+                margin: 0px 0px 45px 0px;
+                .logo__one {
+                    font-family: 'Raleway';
+                    font-weight: 700;
+                    color: #ffffff;
+                    font-size: 55px;
+                }
+
+                .logo__two {
+                    font-family: 'Raleway';
+                    font-weight: 700;
+                    color: #EC7979;
+                    font-size: 55px;
+                }
+            }
+
+            >h1 {
+                font-family: 'Raleway';
+                color: #ffffff;
+                font-weight: 500;
+                font-size: 48px;
+                line-height: 56px;
+                margin: 0px 0px 45px 0px;
+                text-transform: uppercase;
+                text-align: left;
+                padding: 0px 0px 0px 0px;
+            }
+
+            .border {
+                width: 170px;
+                border-bottom: 1px solid #ffffff;
+                margin: 0px 0px 42px 0px;
+            }
+            
+            >p {
+                width: 270px;
+                margin: 0px 0px 42px 0px;
+                font-family: 'Raleway';
+                font-size: 18px;
+                line-height: 21px;
+                color: #FFFFFF;
+            }
+            .body__download {
+                margin: 0 0 200px 0;
+                >a {
+                    display: inline-block;
+                    width: 40%;
+                    min-width: 100px;
+                    max-width: 350px;
+                    border: 3px solid #ffffff;
+                    text-decoration: none;
+                    color: #ffffff;
+                    font-family: 'Open Sans';
+                    font-weight: 600;
+                    font-size: 18px;
+                    line-height: 58px;
+                    text-transform: capitalize;
+                    text-align: center;
+                }
+            }
+        }
+        .main__form-invite {
+            
+            max-width: 470px;
+            background: #ffffff;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            flex: 1 1 300px;
+            >p {
+                padding: 28px 0px;
+                font-family: 'Open Sans';
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 34px;
+                text-align: center;
+                text-transform: uppercase;
+                color: #333333;
+
+                >span {
+                    color: #EC7979;
+                }
+            }
+
+@media (width: 625px) {
+    .container {
+        padding: 100px 20px 20px 20px;
+    }
+    .main__body {
+        margin: 0 0 0 0;
+    }
+    .main__form-invite {
+        margin: 50px 0 0 0;
+    }
+    
+}
+
+            .person-info {
+                padding: 10px 50px 75px 50px;
+
+                >input {
+                    margin: 0 0 33px 0;
+                    width: 100%;
+                    border-bottom: 1px solid #BDBDBD;
+                    font-size: 18px;
+                    line-height: 18px;
+                    padding: 20px 0 20px 0;
+                }
+            }
+            .buttom-invite {
+                width: 100%;
+
+                >a {
+                    display: inline-block;
+                    width: 100%;
+                    line-height: 60px;
+                    background: #EC7979;
+                    border-radius: 0px 0px 10px 10px;
+                    text-align: center;
+                    font-family: 'Open Sans';
+                    font-weight: 600;
+                    font-size: 15px;
+                    line-height: 60px;
+                    color: #FFFFFF;
+                }
+            }
+        }
+    }
+}
