@@ -1,8 +1,11 @@
 .prices {
+    background: #F5F5F5;
+    padding: 50px 0px;
     .container {
-        margin: 0 auto;
+        margin: 0px auto;
         max-width: 1200px;
         padding: 15px;
+        
 
         .prices-section__titles {
             display: flex;
@@ -47,36 +50,40 @@
             .prises-section__item {
                 width: 32%;
                 
-                p {
-                    background: #333333;
-                    font-family: 'Raleway';
-                    font-weight: 700;
-                    text-align: center;
-                    color: #FFFFFF;
-                }
-
-                .item__name {
-                    font-size: 24px;
-                    line-height: 60px;
-                    text-transform: capitalize; 
-                }
-
-                .item__price {
-                    font-size: 36px;
-                    line-height: 100px;
-                    border: 2px solid #F5F5F5;
-                    border-left: none;
-                    border-right: none;
-                }
-
-                .item__description {
-                    font-weight: 400;
-                    font-size: 18px;
-                    line-height: 50px;
-                    color: rgba(255, 255, 255, 0.5);
-                }
-
                 .item__property {
+                    li:nth-child(1) {
+                        background: #333333;
+                        font-family: 'Raleway';
+                        font-weight: 700;
+                        text-align: center;
+                        color: #FFFFFF;
+                        font-size: 24px;
+                        line-height: 60px;
+                        text-transform: capitalize; 
+                    }
+                    li:nth-child(2) {
+                        background: #333333;
+                        font-family: 'Raleway';
+                        font-weight: 700;
+                        text-align: center;
+                        color: #FFFFFF;
+                        font-size: 36px;
+                        line-height: 100px;
+                        border: 2px solid #F5F5F5;
+                        border-left: none;
+                        border-right: none;
+                    }
+                    li:nth-child(3) {
+                        background: #333333;
+                        font-family: 'Raleway';
+                        font-weight: 700;
+                        text-align: center;
+                        color: #FFFFFF;
+                        font-weight: 400;
+                        font-size: 18px;
+                        line-height: 50px;
+                        color: rgba(255, 255, 255, 0.5);
+                    }
                     li {
                         border-bottom: 1px solid #F5F5F5;
                         font-family: 'Raleway';
@@ -85,6 +92,7 @@
                         text-align: center;
                         text-transform: capitalize;
                         color: #86878B;
+                        background: #ffffff;
                     }
                     
                 }
@@ -92,6 +100,7 @@
             }
             .prises-section__item:nth-child(2) {
                 box-shadow: 0px 4px 10px rgba(51, 51, 51, 0.2);
+                margin: 0px 0px 20px 0px;
             }
 
             .prises-section__item:nth-child(1) {
