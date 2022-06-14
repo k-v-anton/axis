@@ -210,11 +210,11 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 .main {
-  background: url(../../img/main/image.png) 0 0/100% 100% no-repeat;
+  background: url(../../img/main/bacground.jpg) 0 0/100% 100% no-repeat;
 }
 @media (width: 600px) {
   .main .main {
-    background: url(../../img/main/image.png) 0 0/100% auto no-repeat;
+    background: url(../../img/main/bacground.jpg) 0 0/100% auto no-repeat;
   }
 }
 .main .container {
