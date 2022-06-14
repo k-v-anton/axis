@@ -1,0 +1,240 @@
+.prices {
+    .container {
+        margin: 0 auto;
+        max-width: 1200px;
+        padding: 15px;
+
+        .prices-section__titles {
+            display: flex;
+            flex-direction: column;
+            h2 {
+                font-family: 'Raleway';
+                font-size: 36px;
+                line-height: 42px;
+                text-align: center;
+                text-transform: uppercase;
+                color: #000000;
+                position: relative;
+                padding: 54px 0px;
+                &::after {
+                    content: '';
+                    position: absolute;
+                    width: 170px;
+                    bottom: 0;
+                    height: 1px;
+                    left: 50%;
+                    background:#EC7979;
+                    margin: 0 0 0 -85px;
+                }
+            }
+
+            p {
+                margin: 40px 0px;
+                font-family: 'Raleway';
+                font-size: 18px;
+                line-height: 21px;
+                text-align: center;
+                color: #86878B;
+            }
+
+        }
+
+        .prices-section__items {  
+            
+            display: flex;
+            flex: 1 1 250px;
+            justify-content: space-between;
+            .prises-section__item {
+                width: 32%;
+                
+                p {
+                    background: #333333;
+                    font-family: 'Raleway';
+                    font-weight: 700;
+                    text-align: center;
+                    color: #FFFFFF;
+                }
+
+                .item__name {
+                    font-size: 24px;
+                    line-height: 60px;
+                    text-transform: capitalize; 
+                }
+
+                .item__price {
+                    font-size: 36px;
+                    line-height: 100px;
+                    border: 2px solid #F5F5F5;
+                    border-left: none;
+                    border-right: none;
+                }
+
+                .item__description {
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 50px;
+                    color: rgba(255, 255, 255, 0.5);
+                }
+
+                .item__property {
+                    li {
+                        border-bottom: 1px solid #F5F5F5;
+                        font-family: 'Raleway';
+                        font-size: 18px;
+                        line-height: 50px;
+                        text-align: center;
+                        text-transform: capitalize;
+                        color: #86878B;
+                    }
+                    
+                }
+                
+            }
+            .prises-section__item:nth-child(2) {
+                box-shadow: 0px 4px 10px rgba(51, 51, 51, 0.2);
+            }
+
+            .prises-section__item:nth-child(1) {
+                margin: 20px 0px 0px 0px;
+            }
+            .prises-section__item:nth-child(3) {
+                margin: 20px 0px 0px 0px;
+            }
+        } 
+    }
+}
+
+
+@media (max-width: 992px) {
+    .prices {
+        .container {
+            .prices-section__titles {
+                h2 {
+                    font-size: 24px;
+                    line-height: 28px;
+                    padding: 46px 0px;
+                    &::after {
+                        content: '';
+                        width: 143px;
+                        left: 50% ;
+                        background: #EC7979;
+                        margin: 0 0 0 -71.5px;
+                    }
+                }
+                p {
+                    margin: 32px 0px;
+                    font-size: 14px;
+                    line-height: 16px;
+                }
+            }
+            .prices-section__items {  
+                .prises-section__item {
+                    max-width: 32%;
+
+                    .item__name {
+                        line-height: 53px;
+                    }
+
+                    .item__price {
+                        line-height: 88.5px;
+                    }
+
+                    .item__description {
+                        line-height: 44px;
+                    }
+
+                    .item__property {
+
+                        li {
+                            line-height: 44px;
+                        }  
+                    }    
+                }
+
+                .prises-section__item:nth-child(1) {
+                    margin: 12px 0px 0px 0px;
+                }
+                .prises-section__item:nth-child(3) {
+                    margin: 12px 0px 0px 0px;
+                }
+            }
+        }
+    }
+}  
+
+
+@media (max-width: 600px) {
+    .prices {
+        .container {
+            .prices-section__titles {
+
+                h2 {
+                    font-size: 24px;
+                    line-height: 28px;
+                    padding: 45px 0px;
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        width: 134px;
+                        margin: 0 0 0 -67px;
+                    }
+                }
+    
+                p {
+                    margin: 24px 0px;
+                    font-size: 14px;
+                    line-height: 16px;
+
+                }
+    
+            }
+    
+            .prices-section__items {  
+                
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                .prises-section__item {
+                    min-width: 100%;
+    
+                    .item__name {
+                        font-size: 18px;
+                        line-height: 47px;
+                        text-transform: capitalize; 
+                    }
+    
+                    .item__price {
+                        font-size: 24px;
+                        line-height: 78px;
+                        border: 2px solid #F5F5F5;
+                    }
+    
+                    .item__description {
+                        font-size: 14px;
+                        line-height: 39px;
+                    }
+    
+                    .item__property {
+                        li {
+                            font-size: 14px;
+                            line-height: 39px;
+                        }
+                        
+                    }
+                    
+                }
+                .prises-section__item:nth-child(2) {
+                    box-shadow: none;
+                }
+    
+                .prises-section__item:nth-child(1) {
+                    margin: 0px 0px 0px 0px;
+                }
+                .prises-section__item:nth-child(3) {
+                    margin: 0px 0px 0px 0px;
+                }
+            } 
+        }
+    }
+}           
+        
