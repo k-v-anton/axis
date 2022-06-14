@@ -1,10 +1,10 @@
 .main {
-    background: url(../../img/main/bacground.jpg) 0 0/100% 100% no-repeat;
+    background: url(../../img/main/image_svg.svg) 0 0/100% 100% no-repeat;
     
 
     @media (width: 600px) {
         .main {
-            background: yellow url(../../img/main/bacground.jpg) 0 0/100% auto no-repeat;
+            background: yellow url(../../img/main/image_svg.svg) 0 0/100% auto no-repeat;
         }
     }
         

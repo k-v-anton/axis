@@ -210,11 +210,11 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 .main {
-  background: url(../../img/main/bacground.jpg) 0 0/100% 100% no-repeat;
+  background: url(../../img/main/image_svg.svg) 0 0/100% 100% no-repeat;
 }
 @media (width: 600px) {
   .main .main {
-    background: yellow url(../../img/main/bacground.jpg) 0 0/100% auto no-repeat;
+    background: yellow url(../../img/main/image_svg.svg) 0 0/100% auto no-repeat;
   }
 }
 .main .container {
@@ -670,7 +670,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .prices {
   background: #F5F5F5;
-  padding: 50px 0px;
+  padding: 0px 0px 50px 0px;
 }
 .prices .container {
   margin: 0px auto;
