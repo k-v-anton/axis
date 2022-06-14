@@ -214,7 +214,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media (width: 600px) {
   .main .main {
-    background: url(../../img/main/bacground.jpg) 0 0/100% auto no-repeat;
+    background: yellow url(../../img/main/bacground.jpg) 0 0/100% auto no-repeat;
   }
 }
 .main .container {
