@@ -1,0 +1,102 @@
+.media {
+    margin: 0px 0px 50px 0px;
+    background: #F8EFEF;
+
+    .container {
+        margin: 0 auto;
+        max-width: 1170px;
+        padding: 15px;
+        display: flex;
+        justify-content: center;
+        
+        .media__title {
+            width: 50%;
+
+            h2 {
+                padding: 14px 0px;
+                font-family: 'Open Sans';
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 32px;
+                text-transform: capitalize;
+            }
+
+            p {
+                margin: 18px 0px 18px 0px;
+                font-family: 'Raleway';
+                font-size: 18px;
+                line-height: 21px;
+                color: #86878B;
+            }
+        }
+
+        .media__social {
+            width: 50%;
+            display: flex;
+            img {
+                padding: 15px;
+                width: 15%;
+            }
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .media {
+
+        .container {
+
+            .media__title {
+
+                h2 {
+                    padding: 10px 0px;
+                    font-size: 18px;
+                    line-height: 25px;
+                }
+    
+                p {
+                    margin: 13px 0px 13px 0px;
+                    font-size: 14px;
+                    line-height: 16px;
+                }
+            }
+        }
+    }
+    
+}
+
+@media (max-width: 600px) {
+    .media {
+    
+        .container {
+            flex-direction: column;
+            align-items: center;
+            
+            .media__title {
+                width: 100%;
+    
+                h2 {
+                    margin: 30px 0px 0px 0px;
+                    text-align: center;
+                    padding: 10px 0px;
+                    font-size: 18px;
+                    line-height: 25px;
+                }
+    
+                p {
+                    text-align: center;
+                    margin: 13px 0px 13px 0px;
+                    font-size: 14px;
+                    line-height: 16px;
+                }
+            }
+    
+            .media__social {
+                margin: 19px 0px 44px 0px;
+                width: 100%;
+            }
+        }
+    }
+    
+}
+
