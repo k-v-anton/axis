@@ -44,7 +44,7 @@
                             font-family: 'Raleway';
                             font-size: 18px;
                             line-height: 21px;
-                            align-items: center;
+                           
                         }
                         .button-download {
                             
@@ -58,18 +58,22 @@
                                 text-align: center;
                                 text-transform: capitalize;
                                 padding: 3% 12%;
+                                a {
+                                    color: #FFFFFF;
+                                }
         
-                                color: #FFFFFF;
+                                
         
                             }
                         }
                     }
                     .body__photo {
                         width: 100%;
+                        min-width: 40%;
+                        
                             img {
                                 max-width: 470px;
                                 width: 100%;
-                                
                             }
                     }
                 }
@@ -97,65 +101,38 @@
     
     .section-tabs {
         .container {
-
-
             .tabs {
-
                 label {
-
-
-                    font-family: 'Open Sans';
-                    font-size: 18px;
-                    line-height: 25px;
                 }
                 .tab {
-                    order: 99;
-                    border: 1px solid #C6CBCD;
-                    width: 100%;
-                    display: none;
                     padding: 15px;
-                    background: #fff;
+
                     .tab__body {
                         display: flex;
             
                         .body__info {
-                            padding: 0 15px 15px 0;
+                            padding: 0px;
                             h2 {
                                 padding: 42px 0px;
                                 text-align: center;
                                 font-size: 18px;
                                 line-height: 25px;
-                                
                             }
                             p {
                                 text-align: center;
-                                padding: 27px 0px;
-                                font-family: 'Raleway';
-                                font-size: 18px;
-                                line-height: 21px;
-                                align-items: center;
-                                
+                                font-size: 13px;
+                                line-height: 15px;
                             }
                             .button-download {
+                                padding: 0 15px;
+
                                 
                                 p {
-                                    display: inline-block;
-                                    background: #EC7979;
-                                    font-family: 'Open Sans';
-                                    font-weight: 600;
-                                    font-size: 18px;
-                                    line-height: 24px;
-                                    text-align: center;
-                                    text-transform: capitalize;
-                                    padding: 17px 100px;
-                                    a {
-                                        color: #fff;
-                                    }
+                                    width: 100%;
                                 }
                             }
                         }
                         .body__photo {
-                            
                             display: none;
                         }
                     }
