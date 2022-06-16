@@ -10,24 +10,33 @@
 </head>
 
 <body>
-    <header class="header">
-        <div class="container">
-            <div class="header__logo">
-                <img src="img/header/1.svg" alt="">
-            </div>
 
-            <div class="header__burger-menu">
-                <button class="burger-menu__burger"></button>
-            </div>
-            <div class="header__menu">
-                <a href="#">Features</a>
-                <a href="#">About</a>
-                <a href="#">Pricing</a>
-                <a href="#">Reviews</a>
-                <a href="#">Contact</a>
-            </div>
+<header class="header">
+        <div class="container">
+            
+            <a href="#" class="logo">
+                <img src="img/header/1.svg" alt="">
+            </a>
+            <!-- Hamburger icon -->
+            <input class="side-menu" type="checkbox" id="side-menu"/>
+            <label class="hamb" for="side-menu">
+                <img src="img/header/hamburger.png" alt="">
+                <img src="/img/header/cross-burger.png" alt="">
+            </label>
+            <!-- Menu -->
+            <nav class="nav">
+                <ul class="menu">
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">Blog</a> </li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Blog</a> </li>
+                    <li><a href="#">About</a></li>
+                </ul>
+            </nav>
         </div>
-    </header>
+</header>
+
+
 
     <main class="main">
         <div class="container">
