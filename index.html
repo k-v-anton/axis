@@ -13,24 +13,21 @@
 
     <header class="header">
         <div class="container">
-            <!-- Logo -->
             <a href="#" class="logo">
                 <img src="img/header/1.svg" alt="">
             </a>
-            <!-- Hamburger icon -->
             <input class="side-menu" type="checkbox" id="side-menu"/>
             <label class="hamburger" for="side-menu">
                 <img src="img/header/hamburger.png" alt="">
                 <img src="img/header/cross-burger.png" alt="">
             </label>
-            <!-- Menu -->
             <nav class="nav">
                 <ul class="menu">
-                    <li><a href="#">Gallery</a></li>
-                    <li><a href="#">Blog</a> </li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Blog</a> </li>
-                    <li><a href="#">about</a></li>
+                    <li><a href="#features">features</a></li>
+                    <li><a href="#about">About</a> </li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#reviews">Reviews</a> </li>
+                    <li><a href="#contacts">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -96,7 +93,7 @@
         </div>
     </section>
 
-    <section class="section-tabs" >
+    <section class="section-tabs" id="features">
         <div class="container">
             <div class="tabs">
                 <input type="radio" name="tabs" id="tabone" checked="checked">
@@ -175,7 +172,7 @@
     </section>
 
 
-    <section class="section2">
+    <section class="section2" id="about">
         <div class="container">
             <div class="section2__header">
                 <h2 class="awesome">
@@ -237,7 +234,7 @@
         </div>
     </section>
 
-    <section class="prices">
+    <section class="prices" id="pricing">
         <div class="container">
             <div class="prices-section__titles">
                 <h2>
@@ -291,7 +288,7 @@
         </div>
     </section>
 
-    <section class="saying">
+    <!-- <section class="saying" id="reviews">
         <div class="container">
             <div class="saying__titles">
                 <h2>
@@ -371,7 +368,7 @@
             </div>
 
         </div>
-    </section>
+    </section> -->
 
     <section class="design">
         <div class="container">
@@ -389,6 +386,34 @@
         </div>
     </section>
 
+    <section class="contact" id="contacts">
+        <div class="container">
+            <div class="contact__titles">
+                <h2>
+                    contact us
+                </h2>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                </p>
+            </div>  
+            <div class="contact__form">
+                <div class="form__content">
+                    <div class="content__left">
+                        <input type="text" tabindex="5" required placeholder="Nane" name="name">
+                        <input type="email" tabindex="6" required placeholder="E-mail" name="e-mail">
+                        <input type="password" tabindex="7" placeholder="Password" name="password">
+                    </div>
+                    <div class="content__right">
+                        <textarea name="Text" placeholder="Message"></textarea>
+                        
+                    </div>
+                </div>
+                <div class="buttom-invite">
+                    <a href="#" tabindex="4">Get Started</a>
+                </div>
+            </div>  
+        </div>
+    </section>
 
     <footer class="footer">
         <div class="container">
@@ -422,8 +447,6 @@
 
         </div>
     </footer>
-
-    
 
 
 

@@ -1,0 +1,45 @@
+.saying {
+  padding: 0px 0px 50px 0px;
+}
+.saying .container {
+  margin: 0px auto;
+  max-width: 1200px;
+  padding: 15px;
+}
+.saying .container .saying__titles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.saying .container .saying__titles h2 {
+  font-family: "Raleway";
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+  position: relative;
+  padding: 54px 0px;
+}
+.saying .container .saying__titles h2::after {
+  content: "";
+  position: absolute;
+  width: 170px;
+  bottom: 0;
+  height: 1px;
+  left: 50%;
+  background: #EC7979;
+  margin: 0 0 0 -85px;
+}
+.saying .container .saying__titles p {
+  margin: 40px 0px;
+  font-family: "Raleway";
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  color: #86878B;
+}

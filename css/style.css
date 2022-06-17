@@ -166,10 +166,10 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 .main {
-  background: #F8EFEF url(../img/main/group.jpg) center/auto 100% no-repeat;
+  background: #F8EFEF url(../img/main/group.jpg) center/100% 100% no-repeat;
 }
 .main .container {
-  padding: 200px 15px;
+  padding: 300px 15px;
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
@@ -248,7 +248,7 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
   flex: 1 1 300px;
 }
-.main .container .main__form-invite > p {
+.main .container .main__form-invite p {
   padding: 28px 0px 0px 0px;
   font-family: "Open Sans";
   font-weight: 700;
@@ -258,26 +258,26 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
   color: #333333;
 }
-.main .container .main__form-invite > p > span {
+.main .container .main__form-invite p span {
   color: #EC7979;
 }
 .main .container .main__form-invite .person-info {
   padding: 15% 10%;
 }
-.main .container .main__form-invite .person-info > input {
+.main .container .main__form-invite .person-info input {
   padding: 0px 0px 18px 0px;
   width: 100%;
   border-bottom: 1px solid #BDBDBD;
   font-size: 18px;
   line-height: 20px;
 }
-.main .container .main__form-invite .person-info > input:nth-child(2) {
+.main .container .main__form-invite .person-info input:nth-child(2) {
   margin: 33px 0;
 }
 .main .container .main__form-invite .buttom-invite {
   width: 100%;
 }
-.main .container .main__form-invite .buttom-invite > a {
+.main .container .main__form-invite .buttom-invite a {
   width: 100%;
   height: 60px;
   background: #EC7979;
@@ -893,7 +893,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .design {
-  background: url(../img/desine/img2.jpg) 0 0/100% auto no-repeat;
+  background: url(../img/desine/img2.jpg) 0 0/100% 100% no-repeat;
   padding: 0px 0px 50px 0px;
 }
 .design .container {
@@ -1009,6 +1009,168 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 58px;
     text-transform: capitalize;
     text-align: center;
+  }
+}
+.contact {
+  padding: 0px 0px 0px 0px;
+}
+.contact .container {
+  margin: 0px auto;
+  max-width: 1200px;
+  padding: 15px;
+}
+.contact .container .contact__titles {
+  display: flex;
+  flex-direction: column;
+}
+.contact .container .contact__titles h2 {
+  font-family: "Raleway";
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+  position: relative;
+  padding: 54px 0px;
+}
+.contact .container .contact__titles h2::after {
+  content: "";
+  position: absolute;
+  width: 170px;
+  bottom: 0;
+  height: 1px;
+  left: 50%;
+  background: #EC7979;
+  margin: 0 0 0 -85px;
+}
+.contact .container .contact__titles p {
+  margin: 40px 0px;
+  font-family: "Raleway";
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  color: #86878B;
+}
+.contact .container .contact__form .form__content {
+  display: flex;
+}
+.contact .container .contact__form .form__content .content__left {
+  padding: 20px 5px 20px 0;
+  width: 50%;
+}
+.contact .container .contact__form .form__content .content__left input {
+  border-bottom: 1px solid #86878B;
+  padding: 10px 0px;
+  width: 90%;
+}
+.contact .container .contact__form .form__content .content__left :nth-child(2) {
+  margin: 40px 0;
+}
+.contact .container .contact__form .form__content .content__right {
+  width: 50%;
+  padding: 20px 0px 20px 5px;
+}
+.contact .container .contact__form .form__content .content__right textarea {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  resize: none;
+  padding: 10px 0px 0px 0px;
+  border-bottom: 1px solid #86878B;
+  text-decoration: none;
+}
+.contact .container .contact__form .buttom-invite {
+  display: flex;
+  justify-content: center;
+  padding: 50px 0;
+}
+.contact .container .contact__form .buttom-invite a {
+  text-decoration: none;
+  display: inline-block;
+  width: 25%;
+  text-align: center;
+  background: #EC7979;
+  color: #ffffff;
+  line-height: 58px;
+}
+
+@media (max-width: 600px) {
+  .contact {
+    padding: 0px 0px 0px 0px;
+  }
+  .contact .container {
+    margin: 0px auto;
+    max-width: 1200px;
+    padding: 15px;
+  }
+  .contact .container .contact__titles {
+    display: flex;
+    flex-direction: column;
+  }
+  .contact .container .contact__titles h2 {
+    font-family: "Raleway";
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+    position: relative;
+    padding: 54px 0px;
+  }
+  .contact .container .contact__titles h2::after {
+    content: "";
+    position: absolute;
+    width: 170px;
+    bottom: 0;
+    height: 1px;
+    left: 50%;
+    background: #EC7979;
+    margin: 0 0 0 -85px;
+  }
+  .contact .container .contact__titles p {
+    margin: 40px 0px;
+    font-family: "Raleway";
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    color: #86878B;
+  }
+  .contact .container .contact__form .form__content {
+    display: flex;
+    flex-direction: column;
+  }
+  .contact .container .contact__form .form__content .content__left {
+    padding: 30px 0 0 0;
+    width: 100%;
+  }
+  .contact .container .contact__form .form__content .content__left input {
+    padding: 0px;
+    width: 100%;
+    margin: 0 0 40px 0;
+  }
+  .contact .container .contact__form .form__content .content__left :nth-child(2) {
+    margin: 0 0 40px 0;
+  }
+  .contact .container .contact__form .form__content .content__right {
+    width: 100%;
+    padding: 0;
+  }
+  .contact .container .contact__form .form__content .content__right textarea {
+    display: inline-block;
+    width: 100%;
+    height: 200px;
+    resize: none;
+    padding: 10px 0px 0px 0px;
+    border-bottom: 1px solid #86878B;
+    text-decoration: none;
+  }
+  .contact .container .contact__form .buttom-invite {
+    display: flex;
+    justify-content: center;
+    padding: 50px 0;
+  }
+  .contact .container .contact__form .buttom-invite a {
+    width: 100%;
   }
 }
 .footer {
