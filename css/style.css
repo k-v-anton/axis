@@ -637,7 +637,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 1px;
   left: 50%;
   background: #EC7979;
-  margin: 0 0 0 -85px;
+  transform: translate(-50%, 0);
 }
 .prices .container .prices-section__titles p {
   margin: 40px 0px;
@@ -655,7 +655,16 @@ h1, h2, h3, h4, h5, h6 {
 .prices .container .prices-section__items .prises-section__item {
   width: 32%;
 }
-.prices .container .prices-section__items .prises-section__item .item__property li:nth-child(1) {
+.prices .container .prices-section__items .prises-section__item :hover {
+  transform: translate(0px, -10px);
+  box-shadow: 0px 4px 10px rgba(51, 51, 51, 0.2);
+  transition: all 0.8s ease 0s;
+}
+.prices .container .prices-section__items .prises-section__item .item__property :hover {
+  transform: translate(0px, 0px);
+  box-shadow: none;
+}
+.prices .container .prices-section__items .prises-section__item .item__property .name-program {
   background: #333333;
   font-family: "Raleway";
   font-weight: 700;
@@ -665,7 +674,7 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 60px;
   text-transform: capitalize;
 }
-.prices .container .prices-section__items .prises-section__item .item__property li:nth-child(2) {
+.prices .container .prices-section__items .prises-section__item .item__property .price-program {
   background: #333333;
   font-family: "Raleway";
   font-weight: 700;
@@ -677,7 +686,7 @@ h1, h2, h3, h4, h5, h6 {
   border-left: none;
   border-right: none;
 }
-.prices .container .prices-section__items .prises-section__item .item__property li:nth-child(3) {
+.prices .container .prices-section__items .prises-section__item .item__property .description-program {
   background: #333333;
   font-family: "Raleway";
   font-weight: 700;
@@ -698,16 +707,6 @@ h1, h2, h3, h4, h5, h6 {
   color: #86878B;
   background: #ffffff;
 }
-.prices .container .prices-section__items .prises-section__item:nth-child(2) {
-  box-shadow: 0px 4px 10px rgba(51, 51, 51, 0.2);
-  margin: 0px 0px 20px 0px;
-}
-.prices .container .prices-section__items .prises-section__item:nth-child(1) {
-  margin: 20px 0px 0px 0px;
-}
-.prices .container .prices-section__items .prises-section__item:nth-child(3) {
-  margin: 20px 0px 0px 0px;
-}
 
 @media (max-width: 992px) {
   .prices .container .prices-section__titles h2 {
@@ -720,7 +719,6 @@ h1, h2, h3, h4, h5, h6 {
     width: 143px;
     left: 50%;
     background: #EC7979;
-    margin: 0 0 0 -71.5px;
   }
   .prices .container .prices-section__titles p {
     margin: 32px 0px;
@@ -742,12 +740,6 @@ h1, h2, h3, h4, h5, h6 {
   .prices .container .prices-section__items .prises-section__item .item__property li {
     line-height: 44px;
   }
-  .prices .container .prices-section__items .prises-section__item:nth-child(1) {
-    margin: 12px 0px 0px 0px;
-  }
-  .prices .container .prices-section__items .prises-section__item:nth-child(3) {
-    margin: 12px 0px 0px 0px;
-  }
 }
 @media (max-width: 600px) {
   .prices .container .prices-section__titles h2 {
@@ -757,9 +749,7 @@ h1, h2, h3, h4, h5, h6 {
   }
   .prices .container .prices-section__titles h2::after {
     content: "";
-    position: absolute;
     width: 134px;
-    margin: 0 0 0 -67px;
   }
   .prices .container .prices-section__titles p {
     margin: 24px 0px;
@@ -773,6 +763,10 @@ h1, h2, h3, h4, h5, h6 {
   }
   .prices .container .prices-section__items .prises-section__item {
     min-width: 100%;
+  }
+  .prices .container .prices-section__items .prises-section__item :hover {
+    transform: translate(0px, 0px);
+    box-shadow: none;
   }
   .prices .container .prices-section__items .prises-section__item .item__name {
     font-size: 18px;
@@ -791,15 +785,6 @@ h1, h2, h3, h4, h5, h6 {
   .prices .container .prices-section__items .prises-section__item .item__property li {
     font-size: 14px;
     line-height: 39px;
-  }
-  .prices .container .prices-section__items .prises-section__item:nth-child(2) {
-    box-shadow: none;
-  }
-  .prices .container .prices-section__items .prises-section__item:nth-child(1) {
-    margin: 0px 0px 0px 0px;
-  }
-  .prices .container .prices-section__items .prises-section__item:nth-child(3) {
-    margin: 0px 0px 0px 0px;
   }
 }
 .saying {
@@ -845,9 +830,11 @@ h1, h2, h3, h4, h5, h6 {
 
 .saying__message {
   display: flex;
+  min-width: 0;
 }
 .saying__message .box-info {
   width: 33.333%;
+  max-width: 350px;
   padding: 15px;
 }
 .saying__message .box-info .message__text-box p {
@@ -890,6 +877,152 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Raleway";
   font-size: 18px;
   line-height: 21px;
+}
+
+@media (max-width: 600px) {
+  .saying {
+    padding: 0px 0px 50px 0px;
+  }
+  .saying .container {
+    margin: 0px auto;
+    max-width: 1200px;
+    padding: 15px;
+  }
+  .saying .container .saying__titles {
+    display: flex;
+    flex-direction: column;
+  }
+  .saying .container .saying__titles h2 {
+    font-family: "Raleway";
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+    position: relative;
+    padding: 54px 0px;
+  }
+  .saying .container .saying__titles h2::after {
+    content: "";
+    position: absolute;
+    width: 170px;
+    bottom: 0;
+    height: 1px;
+    left: 50%;
+    background: #EC7979;
+    margin: 0 0 0 -85px;
+  }
+  .saying .container .saying__titles p {
+    margin: 40px 0px;
+    font-family: "Raleway";
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    color: #86878B;
+  }
+
+  .saying__message {
+    display: flex;
+    min-width: 0;
+  }
+  .saying__message .box-info {
+    width: 33.333%;
+    max-width: 350px;
+    padding: 15px;
+  }
+  .saying__message .box-info .message__text-box p {
+    display: inline-block;
+    padding: 15px 37px;
+    border-radius: 10px;
+    background: #E2E2E2;
+    font-family: "Raleway";
+    font-size: 18px;
+    line-height: 21px;
+    color: #86878B;
+    text-align: center;
+  }
+  .saying__message .box-info .message__text-box .triangle {
+    margin: 0 20px;
+    width: 10px;
+    border: 20px solid transparent;
+    order-top: 20px solid #E2E2E2;
+  }
+  .saying__message .box-info .message__person-info {
+    padding: 45px 0;
+    display: flex;
+  }
+  .saying__message .box-info .message__person-info .person-info__photo {
+    width: 25%;
+    max-width: 100px;
+  }
+  .saying__message .box-info .message__person-info .person-info__photo img {
+    max-width: 70px;
+    width: 100%;
+  }
+  .saying__message .box-info .message__person-info .person-info__person-name .name {
+    font-family: "Open Sans";
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    text-transform: capitalize;
+  }
+  .saying__message .box-info .message__person-info .person-info__person-name .job-title {
+    padding-top: 15px;
+    font-family: "Raleway";
+    font-size: 18px;
+    line-height: 21px;
+  }
+}
+/* Слайдер */
+/* Слайдер запущен */
+/* Слайдер с точками */
+/* Ограничивающая оболочка */
+.slick-list {
+  overflow: hidden;
+}
+
+/* Лента слайдов */
+.slick-track {
+  display: flex;
+}
+
+/* Слайд */
+/* Слайд активный (показывается) */
+/* Слайд основной */
+/* Слайд по центру */
+/* Клонированный слайд */
+/* Стрелка */
+/* Стрелка влево */
+/* Стрелка вправо */
+/* Стрелка не активная */
+/* Точки (булиты) */
+.saying__message.slick-dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.saying__message.slick-dots li {
+  list-style: none;
+  margin: 0px 10px;
+}
+
+/* Активная точка */
+.slick-dots li.slick-active {
+  background-color: #000;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
+/* Элемент точки */
+.slick-dots li button {
+  font-size: 0;
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  border-radius: 5px;
+  border: 1px solid black;
 }
 
 .design {

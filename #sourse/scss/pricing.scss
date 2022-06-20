@@ -27,7 +27,7 @@
                     height: 1px;
                     left: 50%;
                     background:#EC7979;
-                    margin: 0 0 0 -85px;
+                    transform: translate(-50%, 0);
                 }
             }
 
@@ -47,11 +47,23 @@
             display: flex;
             flex: 1 1 250px;
             justify-content: space-between;
+
             .prises-section__item {
                 width: 32%;
-                
+                :hover {
+                    transform: translate(0px, -10px);
+                    box-shadow: (0px 4px 10px rgba(51, 51, 51, 0.2));
+                    transition: all 0.8s ease 0s;
+    
+                }
+
                 .item__property {
-                    li:nth-child(1) {
+                    :hover {
+                        transform: translate(0px, 0px);
+                        box-shadow: none;
+                    }
+
+                    .name-program {
                         background: #333333;
                         font-family: 'Raleway';
                         font-weight: 700;
@@ -61,7 +73,7 @@
                         line-height: 60px;
                         text-transform: capitalize; 
                     }
-                    li:nth-child(2) {
+                    .price-program {
                         background: #333333;
                         font-family: 'Raleway';
                         font-weight: 700;
@@ -73,7 +85,7 @@
                         border-left: none;
                         border-right: none;
                     }
-                    li:nth-child(3) {
+                    .description-program {
                         background: #333333;
                         font-family: 'Raleway';
                         font-weight: 700;
@@ -98,20 +110,25 @@
                 }
                 
             }
-            .prises-section__item:nth-child(2) {
-                box-shadow: 0px 4px 10px rgba(51, 51, 51, 0.2);
-                margin: 0px 0px 20px 0px;
-            }
-
-            .prises-section__item:nth-child(1) {
-                margin: 20px 0px 0px 0px;
-            }
-            .prises-section__item:nth-child(3) {
-                margin: 20px 0px 0px 0px;
-            }
         } 
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 @media (max-width: 992px) {
@@ -127,7 +144,7 @@
                         width: 143px;
                         left: 50% ;
                         background: #EC7979;
-                        margin: 0 0 0 -71.5px;
+                        
                     }
                 }
                 p {
@@ -159,13 +176,6 @@
                         }  
                     }    
                 }
-
-                .prises-section__item:nth-child(1) {
-                    margin: 12px 0px 0px 0px;
-                }
-                .prises-section__item:nth-child(3) {
-                    margin: 12px 0px 0px 0px;
-                }
             }
         }
     }
@@ -183,9 +193,7 @@
                     padding: 45px 0px;
                     &::after {
                         content: '';
-                        position: absolute;
                         width: 134px;
-                        margin: 0 0 0 -67px;
                     }
                 }
     
@@ -199,13 +207,16 @@
             }
     
             .prices-section__items {  
-                
                 display: flex;
                 flex-direction: column;
                 align-items: center;
+                
                 .prises-section__item {
                     min-width: 100%;
-    
+                    :hover {
+                        transform: translate(0px, 0px);
+                        box-shadow: none;
+                    }
                     .item__name {
                         font-size: 18px;
                         line-height: 47px;
@@ -231,16 +242,6 @@
                         
                     }
                     
-                }
-                .prises-section__item:nth-child(2) {
-                    box-shadow: none;
-                }
-    
-                .prises-section__item:nth-child(1) {
-                    margin: 0px 0px 0px 0px;
-                }
-                .prises-section__item:nth-child(3) {
-                    margin: 0px 0px 0px 0px;
                 }
             } 
         }
