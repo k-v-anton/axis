@@ -787,9 +787,6 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 39px;
   }
 }
-.saying {
-  padding: 0px 0px 50px 0px;
-}
 .saying .container {
   margin: 0px auto;
   max-width: 1200px;
@@ -801,229 +798,194 @@ h1, h2, h3, h4, h5, h6 {
 }
 .saying .container .saying__titles h2 {
   font-family: "Raleway";
-  font-size: 36px;
-  line-height: 42px;
+  font-size: 24px;
+  line-height: 28px;
   text-align: center;
   text-transform: uppercase;
   color: #000000;
   position: relative;
-  padding: 54px 0px;
+  padding: 32px 0px;
 }
 .saying .container .saying__titles h2::after {
   content: "";
   position: absolute;
-  width: 170px;
+  width: 134px;
   bottom: 0;
   height: 1px;
   left: 50%;
   background: #EC7979;
-  margin: 0 0 0 -85px;
+  transform: translate(-50%, -50%);
 }
 .saying .container .saying__titles p {
-  margin: 40px 0px;
+  margin: 24px 0px;
   font-family: "Raleway";
-  font-size: 18px;
-  line-height: 21px;
+  font-size: 14px;
+  line-height: 16px;
   text-align: center;
   color: #86878B;
 }
-
-.saying__message {
-  display: flex;
-  min-width: 0;
+.saying .container .slaider {
+  position: relative;
 }
-.saying__message .box-info {
-  width: 33.333%;
-  max-width: 350px;
-  padding: 15px;
-}
-.saying__message .box-info .message__text-box p {
-  display: inline-block;
-  padding: 15px 37px;
-  border-radius: 10px;
-  background: #E2E2E2;
-  font-family: "Raleway";
-  font-size: 18px;
-  line-height: 21px;
-  color: #86878B;
+.saying .container .slaider .slaider__item {
   text-align: center;
-}
-.saying__message .box-info .message__text-box .triangle {
-  margin: 0 20%;
-  width: 10px;
-  border: 20px solid transparent;
-  order-top: 20px solid #E2E2E2;
-}
-.saying__message .box-info .message__person-info {
-  padding: 45px 0;
   display: flex;
+  align-items: center;
+  flex-direction: column;
 }
-.saying__message .box-info .message__person-info .person-info__photo {
-  width: 25%;
-}
-.saying__message .box-info .message__person-info .person-info__photo img {
-  max-width: 70px;
+.saying .container .slaider .slaider__item .item__massage {
   width: 100%;
+  background: #E2E2E2;
+  border-radius: 10px;
+  padding: 45px 10px;
+  position: relative;
+  font-size: 14px;
+  line-height: 16px;
+  font-family: "Raleway";
+  text-align: center;
+  color: #86878B;
 }
-.saying__message .box-info .message__person-info .person-info__person-name .name {
+.saying .container .slaider .slaider__item .item__massage::after {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  left: 10%;
+  width: 0px;
+  height: 0px;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 20px solid #E2E2E2;
+}
+.saying .container .slaider .slaider__item .item__person {
+  width: 100%;
+  margin: 66px 0 0 0;
+  display: flex;
+  align-items: start;
+}
+.saying .container .slaider .slaider__item .item__person .person__photo {
+  max-width: 70px;
+  width: 20%;
+}
+.saying .container .slaider .slaider__item .item__person .person__info {
+  margin: 0 0 0 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.saying .container .slaider .slaider__item .item__person .person__info .info__name {
   font-family: "Open Sans";
   font-weight: 700;
   font-size: 24px;
   line-height: 33px;
   text-transform: capitalize;
+  text-align: left;
+  color: #000000;
 }
-.saying__message .box-info .message__person-info .person-info__person-name .job-title {
-  padding-top: 15px;
+.saying .container .slaider .slaider__item .item__person .person__info .info__job {
   font-family: "Raleway";
-  font-size: 18px;
-  line-height: 21px;
+  font-size: 13px;
+  line-height: 15px;
+  margin: 30px 0;
+  text-align: left;
 }
-
-@media (max-width: 600px) {
-  .saying {
-    padding: 0px 0px 50px 0px;
-  }
-  .saying .container {
-    margin: 0px auto;
-    max-width: 1200px;
-    padding: 15px;
-  }
-  .saying .container .saying__titles {
-    display: flex;
-    flex-direction: column;
-  }
-  .saying .container .saying__titles h2 {
-    font-family: "Raleway";
-    font-size: 36px;
-    line-height: 42px;
-    text-align: center;
-    text-transform: uppercase;
-    color: #000000;
-    position: relative;
-    padding: 54px 0px;
-  }
-  .saying .container .saying__titles h2::after {
-    content: "";
-    position: absolute;
-    width: 170px;
-    bottom: 0;
-    height: 1px;
-    left: 50%;
-    background: #EC7979;
-    margin: 0 0 0 -85px;
-  }
-  .saying .container .saying__titles p {
-    margin: 40px 0px;
-    font-family: "Raleway";
-    font-size: 18px;
-    line-height: 21px;
-    text-align: center;
-    color: #86878B;
-  }
-
-  .saying__message {
-    display: flex;
-    min-width: 0;
-  }
-  .saying__message .box-info {
-    width: 33.333%;
-    max-width: 350px;
-    padding: 15px;
-  }
-  .saying__message .box-info .message__text-box p {
-    display: inline-block;
-    padding: 15px 37px;
-    border-radius: 10px;
-    background: #E2E2E2;
-    font-family: "Raleway";
-    font-size: 18px;
-    line-height: 21px;
-    color: #86878B;
-    text-align: center;
-  }
-  .saying__message .box-info .message__text-box .triangle {
-    margin: 0 20px;
-    width: 10px;
-    border: 20px solid transparent;
-    order-top: 20px solid #E2E2E2;
-  }
-  .saying__message .box-info .message__person-info {
-    padding: 45px 0;
-    display: flex;
-  }
-  .saying__message .box-info .message__person-info .person-info__photo {
-    width: 25%;
-    max-width: 100px;
-  }
-  .saying__message .box-info .message__person-info .person-info__photo img {
-    max-width: 70px;
-    width: 100%;
-  }
-  .saying__message .box-info .message__person-info .person-info__person-name .name {
-    font-family: "Open Sans";
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 33px;
-    text-transform: capitalize;
-  }
-  .saying__message .box-info .message__person-info .person-info__person-name .job-title {
-    padding-top: 15px;
-    font-family: "Raleway";
-    font-size: 18px;
-    line-height: 21px;
-  }
-}
-/* Слайдер */
-/* Слайдер запущен */
-/* Слайдер с точками */
-/* Ограничивающая оболочка */
-.slick-list {
+.saying .container .slaider .slick-list {
   overflow: hidden;
 }
-
-/* Лента слайдов */
-.slick-track {
+.saying .container .slaider .slick-track {
   display: flex;
 }
-
-/* Слайд */
-/* Слайд активный (показывается) */
-/* Слайд основной */
-/* Слайд по центру */
-/* Клонированный слайд */
-/* Стрелка */
-/* Стрелка влево */
-/* Стрелка вправо */
-/* Стрелка не активная */
-/* Точки (булиты) */
-.saying__message.slick-dots {
+.saying .container .slaider .slick-dots {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
-.saying__message.slick-dots li {
-  list-style: none;
-  margin: 0px 10px;
+.saying .container .slaider .slick-dots li {
+  list-style-type: none;
+  margin: 0 10px;
 }
-
-/* Активная точка */
-.slick-dots li.slick-active {
-  background-color: #000;
-  border-radius: 5px;
-  border: 1px solid black;
+.saying .container .slaider .slick-dots li.slick-active button {
+  background: #86878B;
 }
-
-/* Элемент точки */
-.slick-dots li button {
+.saying .container .slaider .slick-dots button {
   font-size: 0;
   width: 10px;
   height: 10px;
-  background-color: #fff;
-  border-radius: 5px;
-  border: 1px solid black;
+  border-radius: 50%;
+  border: 1px solid #86878B;
 }
 
+@media (min-width: 600px) {
+  .saying .container .saying__titles h2 {
+    padding: 48px 0px;
+  }
+  .saying .container .saying__titles h2::after {
+    content: "";
+    width: 142px;
+  }
+  .saying .container .saying__titles p {
+    margin: 32px 0px;
+  }
+  .saying .container .slaider .slaider__item:not(:last-child) {
+    padding: 0 10px 0 0;
+  }
+  .saying .container .slaider .slaider__item .item__massage {
+    padding: 50px 10px;
+  }
+  .saying .container .slaider .slaider__item .item__person .person__photo {
+    max-width: 70px;
+  }
+  .saying .container .slaider .slaider__item .item__person .person__info .info__name {
+    font-size: 18px;
+    line-height: 25px;
+  }
+  .saying .container .slaider .slaider__item .item__person .person__info .info__job {
+    font-size: 14px;
+    line-height: 16px;
+    margin: 10px 0;
+  }
+  .saying .container .slaider .slick-dots button {
+    display: none;
+  }
+}
+@media (min-width: 1024px) {
+  .saying .container .saying__titles h2 {
+    font-size: 36px;
+    line-height: 42px;
+    padding: 54px 0px;
+  }
+  .saying .container .saying__titles h2::after {
+    content: "";
+    width: 170px;
+  }
+  .saying .container .saying__titles p {
+    font-size: 18px;
+    line-height: 21px;
+    margin: 40px 0px 80px 0;
+  }
+  .saying .container .slaider .slaider__item {
+    margin: 0 0 40px 0;
+  }
+  .saying .container .slaider .slaider__item:not(:last-child) {
+    padding: 0 15px 0 0;
+  }
+  .saying .container .slaider .slaider__item .item__massage {
+    font-size: 18px;
+    line-height: 21px;
+    padding: 37px 10px;
+  }
+  .saying .container .slaider .slaider__item .item__person .person__info .info__name {
+    font-size: 24px;
+    line-height: 33px;
+  }
+  .saying .container .slaider .slaider__item .item__person .person__info .info__job {
+    font-size: 18px;
+    line-height: 21px;
+    margin: 15px 0;
+  }
+  .saying .container .slaider .slick-dots button {
+    display: none;
+  }
+}
 .design {
   background: url(../img/desine/img2.jpg) 0 0/100% 100% no-repeat;
   padding: 0px 0px 50px 0px;
