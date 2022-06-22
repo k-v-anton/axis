@@ -114,24 +114,7 @@
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media (max-width: 992px) {
+@media (max-width: 1024px) {
     .prices {
         .container {
             .prices-section__titles {
@@ -181,7 +164,6 @@
     }
 }  
 
-
 @media (max-width: 600px) {
     .prices {
         .container {
@@ -207,11 +189,16 @@
             }
     
             .prices-section__items {  
+                
                 display: flex;
                 flex-direction: column;
                 align-items: center;
                 
                 .prises-section__item {
+                    &:not(:last-child){
+                        margin-bottom: 20px;
+                    }
+                    
                     min-width: 100%;
                     :hover {
                         transform: translate(0px, 0px);
@@ -235,6 +222,7 @@
                     }
     
                     .item__property {
+                        
                         li {
                             font-size: 14px;
                             line-height: 39px;

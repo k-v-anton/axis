@@ -1,0 +1,207 @@
+.info {
+
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 15px;
+
+        .info__header {
+            .awesome {
+                padding: 39px 0 54px 0px;
+                font-family: 'Raleway';
+                font-size: 36px;
+                line-height: 42px;
+                text-align: center;
+                position: relative;
+                margin: 0 0 40px 0;
+                &::after {
+                    content: '';
+                    position: absolute;
+                    left: 50%;
+                    bottom: 0;
+                    width: 170px;
+                    height: 1px;
+                    background: #EC7979; 
+                    transform: translate(-50%, 0);
+                    
+                }
+            }
+            .header__text {
+                text-align: center;
+                font-family: 'Raleway';
+                font-size: 18px;
+                line-height: 21px;
+            }
+        }
+        
+        .info__main {
+            margin: 70px 0;
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-around;
+            &:not(:last-child) {
+                margin: 0 30px 0 0;
+            }
+            .info__wraper {
+                width: 33%;
+            
+                .img__wrapper {
+                    border: 1px solid #EC7979;
+                    border-radius: 50%;
+                    width: 92px;
+                    height: 92px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin:  0 auto 39px;
+
+                    img{
+                        width: 60px;
+                        height: 60px;
+                    }
+                }
+        
+                h4 {
+                    padding: 33.5px 10px;
+                    font-family: 'Open Sans';
+                    font-weight: 700;
+                    font-size: 24px;
+                    line-height: 33px;
+                    text-align: center;
+                    margin: 0 0 18px 0;
+                    
+                }
+        
+                p {
+                    
+                    font-family: 'Raleway';
+                    font-size: 18px;
+                    line-height: 21px;
+                    text-align: center;
+                    padding: 0 10px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .info {
+        .container {
+            .info__header {
+                .awesome {
+                    padding: 31px 0 46px 0px;
+                    font-size: 24px;
+                    line-height: 28px;
+                    margin: 0 0 32px 0;
+                    &::after {
+                        content: '';
+                        width: 142px;
+                    }
+                }
+                .header__text {
+                    font-size: 14px;
+                    line-height: 16px;
+                }
+            }
+            
+            .info__main {
+                margin: 66px 0;
+                &:not(:last-child) {
+                    margin: 0 20px 0 0;
+                }
+                .info__wraper {
+                    width: 33%;
+                
+                    .img__wrapper {
+                        width: 80px;
+                        height: 80px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        margin:  0 auto 34px;
+    
+                        img{
+                            width: 55px;
+                            height: 55px;
+                        }
+                    }
+            
+                    h4 {
+                        padding: 28.5px 10px;
+                        font-size: 18px;
+                        line-height: 25px;
+                        margin: 0 0 17px 0;
+                    }
+            
+                    p {
+                        font-size: 14px;
+                        line-height: 16px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .info {
+
+        .container {
+    
+            .info__header {
+                .awesome {
+                    padding: 35px 0px 50px 0;
+                    font-size: 18px;
+                    line-height: 20px;
+                    margin: 0 0 25px 0;
+                    &::after {
+                        content: '';
+                        width: 134px;
+                    }
+                }
+                .header__text {
+                    text-align: center;
+                    font-family: 'Raleway';
+                    font-size: 18px;
+                    line-height: 21px;
+                    margin: 0 0 50px 0;
+                }
+            }
+            
+            .info__main {
+                margin:  0;
+                flex-direction: column;
+                &:not(:last-child) {
+                    margin: 0px 0 10px 0;
+                }
+                .info__wraper {
+                    width: 100%;
+                
+                    .img__wrapper {;
+                        margin:  50px auto 39px;
+                    }
+            
+                    h4 {
+                        padding: 28.5px 0px;
+                        font-size: 18px;
+                        line-height: 25px;
+                        margin: 0;
+                        
+                    }
+            
+                    p {
+                        font-size: 14px;
+                        line-height: 16px;
+                        padding: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+

@@ -1,0 +1,150 @@
+.banner {
+    
+    .wrapper{
+        width: 100%;
+        height: 100%;
+        background:  url(../../img/desine/image.jpg) 0 0/100% auto  no-repeat;
+        position: relative;
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0,0,0, 0.5);
+            z-index: 2;
+            
+        }
+        .container {
+            position: relative;
+            z-index: 3;
+            margin: 0px auto;
+            max-width: 1200px;
+            padding: 15px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+
+
+            .design__titles {
+                display: flex;
+                flex-direction: column;
+                h2 {
+                    font-family: 'Raleway';
+                    font-size: 36px;
+                    line-height: 42px;
+                    text-transform: uppercase;
+                    color: #ffffff;
+                    position: relative;
+                    padding: 54px 0px;
+                    text-align: center;
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        width: 170px;
+                        bottom: 0;
+                        height: 1px;
+                        left: 50%;
+                        background:#ffffff;
+                        transform: translate(-50%, 0);
+                    }
+                }
+
+                p {
+                    padding: 40px 0px 75px;
+                    font-family: 'Raleway';
+                    font-size: 18px;
+                    line-height: 21px;
+                    color: #ffffff;
+                    text-align: center;
+                }
+                .design__download {
+                    margin: 0px auto 33px;
+                    max-width: 370px;
+                    min-width: 150px;
+                    height: 58px;
+                    width: 30%;
+                    border: 3px solid #ffffff;
+                    background: rgba(0, 0, 0, 0);
+                    font-size: 18px;
+                    line-height: 25px;
+                    color: #ffffff;
+                    font-family: 'Open Sans';
+                    font-weight: 600;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    text-transform: capitalize;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .banner {
+        .wrapper {
+            .container {
+                .design__titles {
+                    h2 {
+                        font-size: 24px;
+                        line-height: 28px;
+                        padding: 46px 0px;
+                        &::after {
+                            content: '';
+                            width: 142px;
+                        }
+                    }
+        
+                    p {
+                        padding: 32px 0px;
+                        font-size: 14px;
+                        line-height: 16px;
+                    }
+                    .design__download {
+                        margin: 0px auto 35px;
+                        
+                    }
+        
+                }
+            }
+        
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .banner {
+        .wrapper {
+            background: url(../img/desine/image.jpg) 0 0/ 100% 100% no-repeat;
+            .container {
+                .design__titles {
+                    h2 {
+                        font-size: 24px;
+                        line-height: 28px;
+                        padding: 46px 0px;
+                        &::after {
+                            content: '';
+                            width: 120px;
+                        }
+                    }
+        
+                    p {
+                        padding: 16px 0px;
+                        font-size: 14px;
+                        line-height: 16px;
+                    }
+                    .design__download {
+                        height: 50px;
+                        width: 100%;
+                        margin: 43px auto;
+                        
+                    }
+                }
+            }
+        }
+    }
+}
