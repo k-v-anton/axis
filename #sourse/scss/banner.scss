@@ -78,6 +78,15 @@
                     justify-content: center;
                     text-transform: capitalize;
                     cursor: pointer;
+                    &:hover {
+                        border: 3px solid rgba(236, 121, 121, 1);
+                        color: rgba(236, 121, 121, 1);
+                    }
+                    &:active {
+                        border: 3px solid rgba(171, 73, 73, 1);
+                        color: rgba(255, 255, 255, 1);
+                        background: rgba(171, 73, 73, 1);
+                    }
                 }
             }
         }

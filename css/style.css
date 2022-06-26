@@ -92,7 +92,8 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
 }
 .header .container .logo img {
-  height: 45px;
+  margin: 10px 0;
+  height: 25px;
 }
 .header .container .nav {
   min-width: 50%;
@@ -258,6 +259,15 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: capitalize;
   cursor: pointer;
 }
+.main .container .main__body .body__download:hover {
+  border: 3px solid rgb(236, 121, 121);
+  color: rgb(236, 121, 121);
+}
+.main .container .main__body .body__download:active {
+  border: 3px solid rgb(171, 73, 73);
+  color: rgb(255, 255, 255);
+  background: rgb(171, 73, 73);
+}
 .main .container .main__form-invite {
   min-width: 40%;
   max-width: 470px;
@@ -308,6 +318,16 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
   justify-content: center;
   text-transform: capitalize;
+}
+.main .container .main__form-invite .button-invite:hover {
+  border: 3px solid rgb(171, 73, 73);
+  color: #ffffff;
+  background: rgb(171, 73, 73);
+}
+.main .container .main__form-invite .button-invite:active {
+  border: 3px solid rgb(171, 73, 73);
+  color: rgb(255, 255, 255);
+  background: #EC7979;
 }
 
 @media (max-width: 1024px) {
@@ -1240,6 +1260,15 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: capitalize;
   cursor: pointer;
 }
+.banner .wrapper .container .design__titles .design__download:hover {
+  border: 3px solid rgb(236, 121, 121);
+  color: rgb(236, 121, 121);
+}
+.banner .wrapper .container .design__titles .design__download:active {
+  border: 3px solid rgb(171, 73, 73);
+  color: rgb(255, 255, 255);
+  background: rgb(171, 73, 73);
+}
 
 @media (max-width: 1024px) {
   .banner .wrapper .container .design__titles h2 {
@@ -1363,6 +1392,16 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 18px;
   line-height: 25px;
   text-transform: capitalize;
+}
+.contact .container .contact__form .buttom-invite:hover {
+  border: 3px solid rgb(171, 73, 73);
+  color: #ffffff;
+  background: rgb(171, 73, 73);
+}
+.contact .container .contact__form .buttom-invite:active {
+  border: 3px solid rgb(171, 73, 73);
+  color: rgb(255, 255, 255);
+  background: #EC7979;
 }
 
 @media (max-width: 1024px) {

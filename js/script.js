@@ -1,3 +1,23 @@
+
+
+// ----------------ПЛАВНЫЙ СКРОЛЛ К ЯКАРЮ -------------------//
+$("a.menu-item").on("click", function (e) {
+    e.preventDefault();
+    var anchor = $(this).attr('href');
+    $('html, body').stop().animate({
+        scrollTop: $(anchor).offset().top - 60
+    }, 800);
+});
+
+$("a.logo-js").on("click", function (e) {
+    e.preventDefault();
+    var anchor = $(this).attr('href');
+    $('html, body').stop().animate({
+        scrollTop: $(anchor).offset().top - 60
+    }, 800);
+});
+
+// --------------------СЛИК СЛАЙД----------------------- //
 $(document).ready(function(){
     $('.slaider').slick({
         arrows: false,
@@ -15,6 +35,15 @@ $(document).ready(function(){
     });
 
 });
+
+
+
+
+
+
+
+
+
 
 
 

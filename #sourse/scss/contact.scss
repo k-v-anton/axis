@@ -93,6 +93,16 @@
                 font-size: 18px;
                 line-height: 25px;
                 text-transform: capitalize;
+                &:hover {
+                    border: 3px solid rgba(171, 73, 73, 1);
+                    color: #ffffff;
+                    background: rgba(171, 73, 73, 1);
+                }
+                &:active {
+                    border: 3px solid rgba(171, 73, 73, 1);
+                    color: rgba(255, 255, 255, 1);
+                    background: #EC7979;
+                }
             }
         }
     }
